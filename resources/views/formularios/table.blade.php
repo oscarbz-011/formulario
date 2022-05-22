@@ -2,14 +2,14 @@
     <table class="table table-striped" id="formularios-table">
         <thead>
             <tr>
-                <th>Que formas de pago admitia?</th>
-        <th>Metodo Envio</th>
-        <th>Tecnologia Venta Producto</th>
-        <th>Publicidad De Producto</th>
-        <th>Fue Util Para El Negocio</th>
-        <th>Noto Aumento De Ventas</th>
-        <th>Siguio Utlizando</th>
-                
+        <th>¿Que formas de pago admitía?</th>
+        <th>¿Que metodos de envio utlizaban?</th>
+        <th>¿Que tecnologias utilizo para la venta de sus productos?</th>
+        <th>¿Como publicitaron sus productos?</th>
+        <th>¿Fue util para tu negocio vender de forma electronica?</th>
+        <th>¿Noto un aumento en las ventas de sus productos?</th>
+        <th>¿Siguio utilizando las ventas electronicas en su negocio?</th>
+            
             </tr>
         </thead>
         <tbody>
