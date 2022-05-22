@@ -1,5 +1,5 @@
-<!-- Forma De Pago Field -->
-<div class="form-group col-sm-6">
+<!-- <FIELDSET></FIELDSET>orma De Pago Field -->
+<div class="form-group col-sm-15">
     {{ Form::label('forma_de_pago', '¿Qué formas de pago admitía?') }}
      <br>
     <label>
@@ -17,8 +17,7 @@
 </div>
 
 <!-- Metodo Envio Field -->
-<br>
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-15">
     {{ Form::label('metodo_envio', '¿Qué métodos de envío utilizaban?') }}
      <br>
     <label>
@@ -30,9 +29,9 @@
     <label>
         {{ Form::radio('metodo_envio', 'Otro ') }} Otro
     </label>
-
+<div>
 <!-- Tecnologia Venta Producto Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-15">
     {{ Form::label('tecnologia_venta_producto', '¿Qué tecnologías utilizó para la venta de sus productos?') }}
      <br>
     <label>
@@ -48,9 +47,9 @@
         {{ Form::radio('tecnologia_venta_producto', 'Otro ') }} Otro
     </label>
 
-
+<div>
 <!-- Publicidad De Producto Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-15">
     {{ Form::label('publicidad_de_producto', '¿Cómo publicitaron sus productos?') }}
      <br>
     <label>
@@ -65,9 +64,9 @@
     <label>
         {{ Form::radio('publicidad_de_producto', 'Otro ') }} Otro
     </label>
-
+<div>
 <!-- Fue Util Para El Negocio Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-15">
     {{ Form::label('fue_util_para_el_negocio', '¿Fue útil para tu negocio vender de forma electrónica?') }}
      <br>
     <label>
@@ -76,9 +75,9 @@
      <label>
         {{ Form::radio('fue_util_para_el_negocio', 'No') }} No
     </label>
-
+<div>
 <!-- Noto Aumento De Ventas Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-15">
     {{ Form::label('noto_aumento_de_ventas', '¿Notó un aumento en las ventas de sus productos?') }}
      <br>
     <label>
@@ -87,9 +86,9 @@
      <label>
         {{ Form::radio('noto_aumento_de_ventas', 'No') }} No
     </label>
-
+<div>
 <!-- Siguio Utlizando Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-15">
     {{ Form::label('siguio_utlizando', '¿Siguió utilizando las ventas electrónicas en su negocio?') }}
      <br>
     <label>
@@ -98,9 +97,9 @@
      <label>
         {{ Form::radio('siguio_utlizando', 'No') }} No
     </label>
-
+<div>
 <!-- Submit Field -->
-<div class="form-group col-sm-12">
-    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-    <a href="{{ route('formularios.index') }}" class="btn btn-secondary">Cancel</a>
+<div class="form-group col-sm-15">
+    {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
+    <a href="{{ route('formularios.index') }}" class="btn btn-secondary">Cancelar</a>
 </div>
