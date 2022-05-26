@@ -22,27 +22,26 @@
 <body class="app flex-row align-items-center">
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <div class="card-group">
                 <div class="card p-4">
                     <div class="card-body">
                         <form method="post" action="{{ url('/login') }}">
-                            @csrf
-                            <h1>Login</h1>
-                            <p class="text-muted">Sign In to your account</p>
+                            <h1>Inicio de sesión</h1>
+                            <p class="text-muted">Accede con tu cuenta</p>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">
                                       <i class="icon-user"></i>
                                     </span>
                                 </div>
-                                <input type="email" class="form-control {{ $errors->has('email')?'is-invalid':'' }}" name="email" value="{{ old('email') }}"
-                                       placeholder="Email">
-                                @if ($errors->has('email'))
+                                <input type="email" class="form-control {{ $errors->has('email')?'is-invalid':'' }}" name="email"
+                                       placeholder="Correo electrónico">
+                                <!-- ($errors->has('email'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
-                                @endif
+                                endif-->
                             </div>
                             <div class="input-group mb-4">
                                 <div class="input-group-prepend">
@@ -50,24 +49,24 @@
                                       <i class="icon-lock"></i>
                                     </span>
                                 </div>
-                                <input type="password" class="form-control {{ $errors->has('password')?'is-invalid':'' }}" placeholder="Password" name="password">
-                                @if ($errors->has('password'))
+                                <input type="password" class="form-control {{ $errors->has('password')?'is-invalid':'' }}" placeholder="Contraseña" name="password">
+                                <!-- ($errors->has('password'))
                                     <span class="invalid-feedback">
                                        <strong>{{ $errors->first('password') }}</strong>
                                     </span>
-                                @endif
+                                endif-->
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <button class="btn btn-primary px-4" type="submit">Login</button>
+                                    <button class="btn btn-primary px-4" type="submit">Acceder</button>
                                 </div>
                                 <div class="col-6 text-right">
-                                    
+
                                 </div>
                             </div>
                         </form>
                     </div>
-              
+
             </div>
         </div>
     </div>
