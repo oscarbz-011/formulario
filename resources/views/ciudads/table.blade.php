@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th>Nombre Ciudad</th>
-                <th colspan="3">Action</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -15,7 +15,7 @@
                     <div class='btn-group'>
                         <a href="{{ route('ciudads.show', [$ciudad->id]) }}" class='btn btn-ghost-success'><i class="fa fa-eye"></i></a>
                         <a href="{{ route('ciudads.edit', [$ciudad->id]) }}" class='btn btn-ghost-info'><i class="fa fa-edit"></i></a>
-                        {!! Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-ghost-danger', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                        {!! Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-ghost-danger', 'onclick' => "return confirm('Estas seguro?')"]) !!}
                     </div>
                     {!! Form::close() !!}
                 </td>
