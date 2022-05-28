@@ -26,7 +26,7 @@
                               <p>{ MENSAJE DE BIENVENIDA Y BREVE EXPLICACIÓN DE LO QUE DEBE COMPLETAR }</p>
 
                               <form action="/enviar-formulario" method="post" class="col-md-6 col-xs-12" style="text-align: left;">
-                              {{csrf_field()}}
+                             {{ csrf_field() }}
                                     <!-- Datos del comercio -->
                                     <div class="mb-3">
                                           <label for="nombre-comercio" class="form-label">Nombre del Comercio:</label>

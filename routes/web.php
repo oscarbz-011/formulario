@@ -23,3 +23,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('/formularios', App\Http\Controllers\FormularioController::class);
 
 route::post('/enviar-formulario', [App\Http\Controllers\FormController::class, 'guardarForm']);
+
+
+
+Route::resource('rubros', App\Http\Controllers\RubroController::class);
+
+Route::resource('ciudads', App\Http\Controllers\CiudadController::class);
+
+Route::resource('departamentos', App\Http\Controllers\DepartamentoController::class);

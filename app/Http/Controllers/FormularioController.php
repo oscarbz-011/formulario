@@ -50,7 +50,7 @@ class FormularioController extends AppBaseController
      *
      * @param CreateFormularioRequest $request
      *
-     * @return Response
+     * @return Response 
      */
     public function store(CreateFormularioRequest $request)
     {

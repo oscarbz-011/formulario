@@ -27,6 +27,7 @@
                 <div class="card p-4">
                     <div class="card-body">
                         <form method="post" action="{{ url('/login') }}">
+                            {{ csrf_field() }}
                             <h1>Inicio de sesión</h1>
                             <p class="text-muted">Accede con tu cuenta</p>
                             <div class="input-group mb-3">
