@@ -23,7 +23,7 @@
             <div class="container-md shadow" style="background-color:#F8F9F9; padding: 30px;">
                   <div class="row">
                         <center>
-                              <p>{ MENSAJE DE BIENVENIDA Y BREVE EXPLICACIÓN DE LO QUE DEBE COMPLETAR }</p>
+                              <p>Bienvenido, complete el formulario</p>
 
                               <form action="/enviar-formulario" method="post" class="col-md-6 col-xs-12" style="text-align: left;">
                              {{ csrf_field() }}
@@ -69,7 +69,7 @@
                                     <br>
 
                                     <!-- Preguntas -->
-                                    <p>{ AVISAR QUE ES LA SECCION DE LAS PREGUNTAS }</p>
+                                    <p>Seleccione una opción por cada pregunta</p>
                                       
                                     <!-- primera pregunta -->
                                     <div class="mb-3">
