@@ -58,7 +58,7 @@ class FormularioController extends AppBaseController
 
         $formulario = $this->formularioRepository->create($input);
 
-        Flash::success('Formulario guardado correctamente.');
+        Flash::success('Formulario guardado con éxito.');
 
         return redirect(route('formularios.index'));
     }
@@ -116,14 +116,14 @@ class FormularioController extends AppBaseController
         $formulario = $this->formularioRepository->find($id);
 
         if (empty($formulario)) {
-            Flash::error('Formulario  no encontrado');
+            Flash::error('Formulario no encontrado');
 
             return redirect(route('formularios.index'));
         }
 
         $formulario = $this->formularioRepository->update($request->all(), $id);
 
-        Flash::success('Formulario actualizado correctamente.');
+        Flash::success('Formulario actualizado con éxito.');
 
         return redirect(route('formularios.index'));
     }
@@ -142,14 +142,14 @@ class FormularioController extends AppBaseController
         $formulario = $this->formularioRepository->find($id);
 
         if (empty($formulario)) {
-            Flash::error('Formulario  no encontrado');
+            Flash::error('Formulario no encontrado');
 
             return redirect(route('formularios.index'));
         }
 
         $this->formularioRepository->delete($id);
 
-        Flash::success('Formulario eliminado correctamente.');
+        Flash::success('Formulario borrado con éxito.');
 
         return redirect(route('formularios.index'));
     }
