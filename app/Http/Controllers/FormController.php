@@ -3,27 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Rubro;
+use App\Models\Ciudad;
+use App\Models\Departamento;
 class FormController extends Controller
 {
     public function verForm()
     {
-        return view('form_view.formulario');
+        $rubros = Rubro::pluck('nombre_rubro','id');
+         $departamentos = Departamento::pluck('nombre_departamento','id');
+         $ciudades = Ciudad::pluck('nombre_ciudad','id');
+
+        return view('form_view.formulario',compact(
+            'rubros','departamentos','ciudades'));
     }
 
-    public function guardarForm(Request $request)
-    {
-        $comercio=$request->input('comercio');
-        $rubro=$request->input('rubro');
-        $departamento=$request->input('departamento');
-        $ciudad=$request->input('ciudad');
-        $direccion=$request->input('direccion');
-
-        //preguntas
-        $preg1=$request->input('preg1');
-        $preg2=$request->input('preg2');
-
-
-        dd($comercio, $rubro, $departamento, $ciudad, $direccion, $preg1, $preg2);
-    }
 }

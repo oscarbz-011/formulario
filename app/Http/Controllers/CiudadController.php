@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateCiudadRequest;
 use App\Repositories\CiudadRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
+use App\Models\Departamento;
 use Flash;
 use Response;
 
@@ -42,7 +43,9 @@ class CiudadController extends AppBaseController
      */
     public function create()
     {
-        return view('ciudads.create');
+         $departamentos = Departamento::pluck('nombre_departamento','id');
+          return view('ciudads.create',compact(
+            'departamentos')); 
     }
 
     /**
@@ -92,6 +95,8 @@ class CiudadController extends AppBaseController
      */
     public function edit($id)
     {
+         $departamentos = Departamento::pluck('nombre_departamento','id');
+          
         $ciudad = $this->ciudadRepository->find($id);
 
         if (empty($ciudad)) {
@@ -100,7 +105,8 @@ class CiudadController extends AppBaseController
             return redirect(route('ciudads.index'));
         }
 
-        return view('ciudads.edit')->with('ciudad', $ciudad);
+        return view('ciudads.edit',compact(
+            'departamentos','ciudad')); 
     }
 
     /**

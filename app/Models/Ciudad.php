@@ -27,6 +27,7 @@ class Ciudad extends Model
 
 
     public $fillable = [
+         'departamento_id',
         'nombre_ciudad'
     ];
 
@@ -37,6 +38,7 @@ class Ciudad extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'departamento_id' => 'integer',
         'nombre_ciudad' => 'string'
     ];
 
@@ -49,5 +51,10 @@ class Ciudad extends Model
         'nombre_ciudad' => 'required'
     ];
 
-    
+     public function formulario (){
+        return $this-> hasMany('App\Models\Formulario');
+    }
+    public function departamento (){
+        return $this->belongsTo('App\Models\Departamento');
+    }
 }

@@ -16,6 +16,7 @@ class CreateCiudadsTable extends Migration
     {
         Schema::create('ciudads', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('departamento_id')->unsigned();
             $table->text('nombre_ciudad');
             $table->timestamps();
             $table->softDeletes();

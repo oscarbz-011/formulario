@@ -48,6 +48,8 @@ class Rubro extends Model
     public static $rules = [
         'nombre_rubro' => 'required'
     ];
-
+     public function formulario (){
+        return $this-> hasMany('App\Models\Formulario');
+    }
     
 }

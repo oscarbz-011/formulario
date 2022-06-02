@@ -2,6 +2,11 @@
     <table class="table table-striped" id="formularios-table">
         <thead>
             <tr>
+        <th>Nombre de comercio</th>
+        <th>Rubro</th>
+        <th>Departamento</th>
+        <th>Ciudad</th>
+        <th>Direccion</th>
         <th>¿Que formas de pago admitía?</th>
         <th>¿Que metodos de envio utlizaban?</th>
         <th>¿Que tecnologias utilizo para la venta de sus productos?</th>
@@ -15,6 +20,10 @@
         <tbody>
         @foreach($formularios as $formulario)
             <tr>
+                 <td>{{ $formulario->nombre_comercio }}</td>
+                  <td>{{ $formulario->rubro->nombre_rubro }}</td>
+                   <td>{{ $formulario->departamento->nombre_departamento }}</td>
+                    <td>{{ $formulario->ciudad->nombre_ciudad }}</td>
                 <td>{{ $formulario->forma_de_pago }}</td>
             <td>{{ $formulario->metodo_envio }}</td>
             <td>{{ $formulario->tecnologia_venta_producto }}</td>

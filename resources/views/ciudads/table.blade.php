@@ -3,6 +3,7 @@
         <thead>
             <tr>
                 <th>Nombre Ciudad</th>
+                <th>Departamento</th>
                 
             </tr>
         </thead>
@@ -10,6 +11,7 @@
         @foreach($ciudads as $ciudad)
             <tr>
                 <td>{{ $ciudad->nombre_ciudad }}</td>
+                <td>{{ $ciudad->departamento->nombre_departamento }}</td>
                 <td>
                     {!! Form::open(['route' => ['ciudads.destroy', $ciudad->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

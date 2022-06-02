@@ -48,6 +48,12 @@ class Departamento extends Model
     public static $rules = [
         'nombre_departamento' => 'required'
     ];
+     public function formulario (){
+        return $this-> hasMany('App\Models\Formulario');
+    }
+     public function departamento (){
+        return $this-> hasMany('App\Models\Departamento');
+    }
 
     
 }

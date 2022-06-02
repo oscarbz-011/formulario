@@ -1,5 +1,21 @@
 <!-- Forma De Pago Field -->
 <div class="form-group">
+    {!! Form::label('nombre_comercio', 'Comercio') !!}
+    <p>{{ $formulario->nombre_comercio }}</p>
+</div><div class="form-group">
+    {!! Form::label('rubro_id', 'Rubro') !!}
+    <p>{{ $formulario->rubro->nombre_rubro }}</p>
+</div><div class="form-group">
+    {!! Form::label('departamento_id', 'Departamento') !!}
+    <p>{{ $formulario->departamento->nombre_departamento }}</p>
+</div><div class="form-group">
+    {!! Form::label('ciuadad_id', 'Ciudad') !!}
+    <p>{{ $formulario->ciudad->nombre_ciudad }}</p>
+</div><div class="form-group">
+    {!! Form::label('direccion', 'Direccion') !!}
+    <p>{{ $formulario->direccion }}</p>
+</div>
+<div class="form-group">
     {!! Form::label('forma_de_pago', '¿Qué formas de pago admitía?') !!}
     <p>{{ $formulario->forma_de_pago }}</p>
 </div>
@@ -42,13 +58,13 @@
 
 <!-- Created At Field -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Creado:') !!}
     <p>{{ $formulario->created_at }}</p>
 </div>
 
 <!-- Updated At Field -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Actualizado:') !!}
     <p>{{ $formulario->updated_at }}</p>
 </div>
 

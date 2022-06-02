@@ -16,6 +16,11 @@ class CreateFormulariosTable extends Migration
     {
         Schema::create('formularios', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('rubro_id')->unsigned();
+            $table->integer('departamento_id')->unsigned();
+            $table->integer('ciudad_id')->unsigned();
+            $table->text('nombre_comercio');
+            $table->text('direccion');
             $table->text('forma_de_pago');
             $table->text('metodo_envio');
             $table->text('tecnologia_venta_producto');

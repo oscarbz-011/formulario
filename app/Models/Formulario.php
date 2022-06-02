@@ -33,6 +33,11 @@ class Formulario extends Model
 
 
     public $fillable = [
+        'nombre_comercio',
+        'rubro_id',
+        'departamento_id',
+        'ciudad_id',
+        'direccion',
         'forma_de_pago',
         'metodo_envio',
         'tecnologia_venta_producto',
@@ -73,5 +78,16 @@ class Formulario extends Model
         'siguio_utlizando' => 'required'
     ];
 
-    
+     public function rubro (){
+     return $this-> belongsTo('App\Models\Rubro');
+
+    }
+     public function ciudad (){
+     return $this-> belongsTo('App\Models\Ciudad');
+
+    }
+     public function departamento (){
+     return $this-> belongsTo('App\Models\Departamento');
+
+    }
 }

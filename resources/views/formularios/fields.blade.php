@@ -1,4 +1,24 @@
 <!-- <FIELDSET></FIELDSET>orma De Pago Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('nombre_comercio', 'Comercio:') !!}
+    {!! Form::text('nombre_comercio', null, ['class' => 'form-control']) !!}
+</div>
+<div class="form-group col-sm-6">
+    {!! Form::label('rubro_id', 'Rubro:') !!}
+    {!! Form::select('rubro_id', $rubros,null,['required', 'class' => 'form-control','placeholder'=>'Seleccione'])!!}
+</div>
+<div class="form-group col-sm-6">
+    {!! Form::label('departamento_id', 'Departamento:') !!}
+    {!! Form::select('departamento_id', $departamentos,null,['required', 'class' => 'form-control','placeholder'=>'Seleccione'])!!}
+</div>
+<div class="form-group col-sm-6">
+    {!! Form::label('ciudad_id', 'Ciudades:') !!}
+    {!! Form::select('ciudad_id', $ciudades,null,['required', 'class' => 'form-control','placeholder'=>'Seleccione'])!!}
+</div>
+<div class="form-group col-sm-6">
+    {!! Form::label('direccion', 'Direccion:') !!}
+    {!! Form::text('direccion', null, ['class' => 'form-control']) !!}
+</div>
 <div class="form-group col-sm-15">
     {{ Form::label('forma_de_pago', '¿Qué formas de pago admitía?') }}
      <br>

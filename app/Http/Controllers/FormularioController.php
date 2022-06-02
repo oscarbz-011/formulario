@@ -7,6 +7,9 @@ use App\Http\Requests\UpdateFormularioRequest;
 use App\Repositories\FormularioRepository;
 use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
+use App\Models\Rubro;
+use App\Models\Ciudad;
+use App\Models\Departamento;
 use Flash;
 use Response;
 
@@ -42,7 +45,12 @@ class FormularioController extends AppBaseController
      */
     public function create()
     {
-        return view('formularios.create');
+         $rubros = Rubro::pluck('nombre_rubro','id');
+         $departamentos = Departamento::pluck('nombre_departamento','id');
+         $ciudades = Ciudad::pluck('nombre_ciudad','id');
+
+        return view('formularios.create',compact(
+            'rubros','departamentos','ciudades')); 
     }
 
     /**
@@ -93,6 +101,9 @@ class FormularioController extends AppBaseController
     public function edit($id)
     {
         $formulario = $this->formularioRepository->find($id);
+        $rubros = Rubro::pluck('nombre_rubro','id');
+         $departamentos = Departamento::pluck('nombre_departamento','id');
+         $ciudades = Ciudad::pluck('nombre_ciudad','id');
 
         if (empty($formulario)) {
             Flash::error('Formulario no encontrado');
@@ -100,7 +111,8 @@ class FormularioController extends AppBaseController
             return redirect(route('formularios.index'));
         }
 
-        return view('formularios.edit')->with('formulario', $formulario);
+       return view('formularios.edit',compact(
+            'rubros','departamentos','ciudades','formulario'));
     }
 
     /**
