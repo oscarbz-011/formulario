@@ -12,7 +12,7 @@
             <div class="container-fluid shadow-lg sticky-md-top" style="padding: 20px; background-color:#0083DE; color:white; ">
                   <div class="row">
                         <div class="col-md-2 col-xs-12" align="center" style="margin-bottom: 10px;">
-                              <a href="/completar-formulario"><img src="/images/logo.png" alt="Logo" width="60px"></a>
+                              <a href="/completar-formulario"><img src="./images/logo.png" alt="Logo" width="60px"></a>
                         </div>
                         <div class="col-md-10 col-xs-12" style="align-self: center;" >
                               <h4>Comercio electrónico en tiempos de cuarentena inteligente a causa del covid 19</h4>
