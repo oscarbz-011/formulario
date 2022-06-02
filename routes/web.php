@@ -13,18 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [App\Http\Controllers\FormController::class, 'verForm']);
+Route::get('/', [App\Http\Controllers\FormController::class, 'create']);
+Route::resource('/guardar', [App\Http\Controllers\FormularioController::class, 'FormStore']);
+
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 Route::resource('/formularios', App\Http\Controllers\FormularioController::class);
-
-route::post('/enviar-formulario', [App\Http\Controllers\FormController::class, 'guardarForm']);
-
-
 
 Route::resource('rubros', App\Http\Controllers\RubroController::class);
 

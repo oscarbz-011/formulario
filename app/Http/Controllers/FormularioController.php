@@ -61,7 +61,7 @@ class FormularioController extends AppBaseController
      * @return Response 
      */
     public function store(CreateFormularioRequest $request)
-    {
+    {   
         $input = $request->all();
 
         $formulario = $this->formularioRepository->create($input);
@@ -70,6 +70,28 @@ class FormularioController extends AppBaseController
 
         return redirect(route('formularios.index'));
     }
+
+
+    public function FormStore(CreateFormularioRequest $request)
+    {   
+        Form::create([
+            'nombre_comercio'=>$request->nombre_comercio,
+            'rubro_id'=>$request->rubro_id,
+            'departamento_id'=>$request->departamento_id,
+            'ciudad_id'=>$request->ciudad_id,
+            'direccion'=>$request->direccion,
+            'metodo_envio'=>implode(',',$request->metodo_envio),
+            'tecnologia_venta_producto'=>implode(',',$request->tecnologia_venta_producto),
+            'publicidad_de_producto'=>implode(',',$request->publicidad_de_producto),
+            'fue_util_para_el_negocio'=>$request->fue_util_para_el_negocio,
+            'noto_aumento_de_ventas'=>$request->noto_aumento_de_ventas,
+            'siguio_utlizando'=>implode(',',$request->siguio_utlizando),
+            'forma_de_pago' =>implode(',',$request->forma_de_pago,)
+        ]);
+
+        return redirect('/');
+    }
+
 
     /**
      * Display the specified Formulario.
