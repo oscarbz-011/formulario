@@ -72,9 +72,13 @@ class FormularioController extends AppBaseController
     }
 
 
-    public function FormStore(CreateFormularioRequest $request)
+    //funcion que guarda la encuesta del usuario
+    public function form(CreateFormularioRequest $request)
     {   
-        Form::create([
+        $input = $request->all();
+        $formulario = $this->formularioRepository->create($input);
+
+        /* Form::create([
             'nombre_comercio'=>$request->nombre_comercio,
             'rubro_id'=>$request->rubro_id,
             'departamento_id'=>$request->departamento_id,
@@ -87,9 +91,9 @@ class FormularioController extends AppBaseController
             'noto_aumento_de_ventas'=>$request->noto_aumento_de_ventas,
             'siguio_utlizando'=>implode(',',$request->siguio_utlizando),
             'forma_de_pago' =>implode(',',$request->forma_de_pago,)
-        ]);
+        ]); */
 
-        return redirect('/');
+        return redirect('/')->with('guardado', 'si');
     }
 
 

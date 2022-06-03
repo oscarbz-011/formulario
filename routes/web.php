@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\FormController::class, 'create']);
-Route::resource('/guardar', [App\Http\Controllers\FormularioController::class, 'FormStore']);
-
+Route::post('/guardar', [App\Http\Controllers\FormularioController::class, 'form'])->name('guardar');
 
 Auth::routes();
 

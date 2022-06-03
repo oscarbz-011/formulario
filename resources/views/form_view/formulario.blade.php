@@ -26,6 +26,7 @@
                               <p>Bienvenido, complete el formulario</p>
 
                               {!! Form::open(['route' => 'guardar']) !!}
+                              <div style="text-align: left"> 
                               {{ csrf_field() }}
                                     <!-- Datos del comercio -->
                                     <div class="mb-3">
@@ -60,7 +61,7 @@
 
                                     <!-- Preguntas -->
                                     <p>Seleccione una opción por cada pregunta</p>
-                                      
+                                    
                                     <!-- primera pregunta -->
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Qué formas de pago admitía? </label>
@@ -86,7 +87,7 @@
                                           </div>
                                     </div>
 
-                                      <!-- segunda pregunta -->
+                                    <!-- segunda pregunta -->
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Qué métodos de envío utilizaba?</label>
                                           <div class="form-check" style="margin-bottom: 15px">
@@ -103,7 +104,7 @@
                                           </div>
                                     </div>
 
-                                      <!-- tercera pregunta -->
+                                    <!-- tercera pregunta -->
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Qué tecnologías utilizó para la venta de sus productos?</label>
                                           <div class="form-check" style="margin-bottom: 15px">
@@ -184,6 +185,7 @@
                                           </div>
                                     </div>
 
+                              </div>
                                     <br>
 
                                     <input type="submit" class="btn btn-primary col-12" value="Enviar Respuesta" name="enviar">
@@ -193,6 +195,18 @@
 
                   </div>
             </div>
+
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            @if(session('guardado')=='si')
+                  <script type="text/javascript">
+                        Swal.fire({
+                              icon: 'success',
+                              title: 'Muchas gracias 😎',
+                              confirmButtonColor:'#0083DE',
+                              text: '¡Su respuesta ha sido guardada!',
+                        })
+                  </script>
+            @endif
 
       </body>
 </html>
