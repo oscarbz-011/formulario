@@ -1,8 +1,9 @@
 <div class="table-responsive-sm">
-    <table class="table table-striped" id="rubros-table">
+    <table class="table table-striped" id="tabla">
         <thead>
             <tr>
                 <th>Nombre Rubro</th>
+                <th>Accion</th>
         
             </tr>
         </thead>

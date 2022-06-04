@@ -1,9 +1,10 @@
 <div class="table-responsive-sm">
-    <table class="table table-striped" id="departamentos-table">
+    <table class="table table-striped" id="tabla">
         <thead>
             <tr>
                 <th>Nombre Departamento</th>
-               
+               <th>Accion</th>
+
             </tr>
         </thead>
         <tbody>

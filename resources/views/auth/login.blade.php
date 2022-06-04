@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Inicio de sesión</title>
+     <link rel="icon" type="image/png" href="/logomis.png" />
     <meta name="description" content="CoreUI Template - InfyOm Laravel Generator">
     <meta name="keyword" content="CoreUI,Bootstrap,Admin,Template,InfyOm,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
     <!-- Bootstrap-->
@@ -21,6 +22,8 @@
 </head>
 <body class="app flex-row align-items-center">
 <div class="container">
+    <center> <img src="/logomis.png" class="img-circle" alt="User Image"   width="220" height="100"/></center>
+    <br>
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card-group">

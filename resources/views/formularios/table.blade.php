@@ -1,5 +1,5 @@
 <div class="table-responsive-sm">
-    <table class="table table-striped" id="formularios-table">
+    <table class="table table-striped" id="tabla">
         <thead>
             <tr>
         <th>Nombre de comercio</th>
@@ -14,7 +14,7 @@
         <th>¿Fue util para tu negocio vender de forma electronica?</th>
         <th>¿Noto un aumento en las ventas de sus productos?</th>
         <th>¿Siguio utilizando las ventas electronicas en su negocio?</th>
-            
+            <th>Accion</th>
             </tr>
         </thead>
         <tbody>
@@ -24,6 +24,7 @@
                   <td>{{ $formulario->rubro->nombre_rubro }}</td>
                    <td>{{ $formulario->departamento->nombre_departamento }}</td>
                     <td>{{ $formulario->ciudad->nombre_ciudad }}</td>
+                    <td>{{ $formulario->direccion }}</td>
                 <td>{{ $formulario->forma_de_pago }}</td>
             <td>{{ $formulario->metodo_envio }}</td>
             <td>{{ $formulario->tecnologia_venta_producto }}</td>
@@ -35,7 +36,7 @@
                     {!! Form::open(['route' => ['formularios.destroy', $formulario->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
                         <a href="{{ route('formularios.show', [$formulario->id]) }}" class='btn btn-ghost-success'><i class="fa fa-eye"></i></a>
-                        <a href="{{ route('formularios.edit', [$formulario->id]) }}" class='btn btn-ghost-info'><i class="fa fa-edit"></i></a>
+                      <!--  <a href="{{ route('formularios.edit', [$formulario->id]) }}" class='btn btn-ghost-info'><i class="fa fa-edit"></i></a>--> 
                         {!! Form::button('<i class="fa fa-trash"></i>', ['type' => 'submit', 'class' => 'btn btn-ghost-danger', 'onclick' => "return confirm('Estas seguro?')"]) !!}
                     </div>
                     {!! Form::close() !!}

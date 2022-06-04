@@ -1,10 +1,11 @@
 <div class="table-responsive-sm">
-    <table class="table table-striped" id="ciudads-table">
+    <table class="table table-striped" id="tabla">
         <thead>
             <tr>
                 <th>Nombre Ciudad</th>
                 <th>Departamento</th>
-                
+                <th>Accion</th>
+
             </tr>
         </thead>
         <tbody>
