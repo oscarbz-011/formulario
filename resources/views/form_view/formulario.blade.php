@@ -66,23 +66,23 @@
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Qué formas de pago admitía? </label>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="forma_de_pago" value="efectivo" id="flexCheckDefault">
+                                                <input class="form-check-input" type="checkbox" name="forma_de_pago" value="Efectivo" id="flexCheckDefault">
                                                 <label class="form-check-label" for="flexCheckDefault">Efectivo</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="forma_de_pago" value="transferencia" id="flexCheckChecked" >
+                                                <input class="form-check-input" type="checkbox" name="forma_de_pago_1" value="Transferencias Bancarias" id="flexCheckChecked" >
                                                 <label class="form-check-label" for="flexCheckChecked">Transferencias Bancarias</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="forma_de_pago" value="billetera móvil" id="flexCheckChecked2" >
+                                                <input class="form-check-input" type="checkbox" name="forma_de_pago_2" value="Billetera Móvil (Tigo Money, Billetera Personal, Zimple)" id="flexCheckChecked2" >
                                                 <label class="form-check-label" for="flexCheckChecked2">Billetera Móvil (Tigo Money, Billetera Personal, Zimple)</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="forma_de_pago" value="otras billeteras" id="flexCheckChecked3" >
+                                                <input class="form-check-input" type="checkbox" name="forma_de_pago_3" value="Otras Billeteras Electrónicas" id="flexCheckChecked3" >
                                                 <label class="form-check-label" for="flexCheckChecked3">Otras Billeteras Electrónicas</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="forma_de_pago" value="otro" id="flexCheckChecked4" >
+                                                <input class="form-check-input" type="checkbox" name="forma_de_pago_4" value="Otros" id="flexCheckChecked4" >
                                                 <label class="form-check-label" for="flexCheckChecked4">Otros</label>
                                           </div>
                                     </div>
@@ -91,15 +91,15 @@
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Qué métodos de envío utilizaba?</label>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="metodo_envio" value="envio propio" id="pregCheck2">
+                                                <input class="form-check-input" type="checkbox" name="metodo_envio" value="Envio Propio" id="pregCheck2">
                                                 <label class="form-check-label" for="pregCheck2">Envio Propio</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="metodo_envio" value="encomienda" id="pregCheck2-1" >
+                                                <input class="form-check-input" type="checkbox" name="metodo_envio_1" value="Envio por encomienda" id="pregCheck2-1" >
                                                 <label class="form-check-label" for="pregCheck2-1">Envio por encomienda</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="metodo_envio" value="otro" id="pregCheck2-2" >
+                                                <input class="form-check-input" type="checkbox" name="metodo_envio_2" value="Otro" id="pregCheck2-2" >
                                                 <label class="form-check-label" for="pregCheck2-2">Otro</label>
                                           </div>
                                     </div>
@@ -108,19 +108,19 @@
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Qué tecnologías utilizó para la venta de sus productos?</label>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto" value="whatsapp" id="pregCheck3">
+                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto" value="Whatsapp" id="pregCheck3">
                                                 <label class="form-check-label" for="pregCheck3">Whatsapp</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto" value="facebook" id="pregCheck3-" >
+                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto_1" value="Facebook Marketplace" id="pregCheck3-" >
                                                 <label class="form-check-label" for="pregCheck3-">Facebook Marketplace</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto" value="instagram" id="pregCheck3-1" >
+                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto_2" value="Instagram" id="pregCheck3-1" >
                                                 <label class="form-check-label" for="pregCheck3-1">Instagram</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto" value="otro" id="pregCheck3-2" >
+                                                <input class="form-check-input" type="checkbox" name="tecnologia_venta_producto_3" value="Otro" id="pregCheck3-2" >
                                                 <label class="form-check-label" for="pregCheck3-2">Otro</label>
                                           </div>
                                     </div>
@@ -129,19 +129,19 @@
                                     <div class="mb-3">
                                           <label for="phone" class="form-label">¿Cómo publicitaron sus productos?</label>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto" value="facebook ads" id="pregCheck4">
+                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto" value="Facebook AD's" id="pregCheck4">
                                                 <label class="form-check-label" for="pregCheck4">Facebook AD's</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto" value="whatsapp" id="pregCheck4-" >
+                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto_1" value="Estados de Whatsapp" id="pregCheck4-" >
                                                 <label class="form-check-label" for="pregCheck4-">Estados de Whatsapp</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto" value="instagram" id="pregCheck4-1" >
+                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto_2" value="Historias de Instagram" id="pregCheck4-1" >
                                                 <label class="form-check-label" for="pregCheck4-1">Historias de Instagram</label>
                                           </div>
                                           <div class="form-check" style="margin-bottom: 15px">
-                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto" value="otro" id="pregCheck4-2" >
+                                                <input class="form-check-input" type="checkbox" name="publicidad_de_producto_3" value="Otro" id="pregCheck4-2" >
                                                 <label class="form-check-label" for="pregCheck4-2">Otro</label>
                                           </div>
                                     </div>
