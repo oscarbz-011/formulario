@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Registro de formulario</title>
+    <title>Home</title>
       <link rel="icon" type="image/png" href="/logomis.png" />
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 
@@ -20,11 +22,13 @@
     {{--<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/flag.min.css">--}}
      <!-- PRO version -->
 
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css">
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+
 <header class="app-header navbar">
     <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
         <span class="navbar-toggler-icon"></span>
@@ -44,7 +48,7 @@
         <li class="nav-item d-md-down-none">
             <a class="nav-link" href="#">
                 <i class="icon-user"></i>
-                
+
             </a>
         </li>
         <li class="nav-item dropdown">
@@ -68,12 +72,18 @@
     </ul>
 </header>
 
+
+
+
+
 <div class="app-body">
     @include('layouts.sidebar')
     <main class="main">
         @yield('content')
     </main>
 </div>
+
+
 <footer class="app-footer">
     <div>
         <a href="">DW2 </a>
@@ -84,6 +94,8 @@
         <a href="">DW2</a>
     </div>
 </footer>
+
+
 </body>
 <!-- jQuery 3.1.1 -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -95,7 +107,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
- 
+
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
     <script>
        $(document).ready(function() {
@@ -108,4 +120,5 @@
 } );
 
     </script>
-</html>
+</div>
+    </html>
